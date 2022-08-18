@@ -24,7 +24,7 @@ class ProfilActivity : AppCompatActivity() {
         databaseReference=database?.reference!!.child("profile")
         var currentUser=auth.currentUser
         binding.ProfileMailText.text="Your email: "+currentUser?.email
-        //realtimedatabase 'den idden altındaki childlerin içindeki veriyi sayfaya aktarılacak
+        //realtimedatabase 'den idden altındaki childlerin içindeki veriyi sayfaya aktarılacak.
         var userReference=databaseReference?.child(currentUser?.uid!! )
         userReference?.addValueEventListener(object:ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {

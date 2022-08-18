@@ -41,12 +41,12 @@ class UserActivity : AppCompatActivity() {
             }
             else if(TextUtils.isEmpty(useremail))
             {
-                binding.useremail.error="Please enter your e-mail account"
+                binding.useremail.error="Please enter your e-mail account."
                 return@setOnClickListener
             }
             else if(TextUtils.isEmpty(userpassword))
             {
-                binding.userpassword.error="Please enter your password"
+                binding.userpassword.error="Please enter your password."
                 return@setOnClickListener
             }
             else if(TextUtils.isEmpty(userabout))

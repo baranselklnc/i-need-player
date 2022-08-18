@@ -43,11 +43,11 @@ class UpdateActivity : AppCompatActivity() {
             currentUser!!.updateEmail(updateemail).addOnCompleteListener{
                 task->
                 if(task.isSuccessful){
-                    Toast.makeText(applicationContext,"Your e-mail account has been updated",Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext,"Your e-mail account has been updated.",Toast.LENGTH_LONG).show()
 
                 }
                 else{
-                    Toast.makeText(applicationContext,"Upss! E mail update operation failed,try again",Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext,"Upss! E mail update operation failed,try again.",Toast.LENGTH_LONG).show()
 
                 }
             }
@@ -60,7 +60,7 @@ class UpdateActivity : AppCompatActivity() {
 
                 }
                 else{
-                    Toast.makeText(applicationContext,"Upss!Password update operation failed,try again",Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext,"Upss!Password update operation failed,try again.",Toast.LENGTH_LONG).show()
 
                 }
             }

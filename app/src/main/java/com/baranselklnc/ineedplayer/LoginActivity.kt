@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        auth = FirebaseAuth.getInstance() //konum izni , erişim
+        auth = FirebaseAuth.getInstance() //konum izni , erişimi
         //oturum açıp açmadığının kontrolü
         var currentUser = auth.currentUser
         if (currentUser != null) {
@@ -28,10 +28,10 @@ class LoginActivity : AppCompatActivity() {
             var loginemail = binding.loginemail.text.toString()
             var loginpassword = binding.loginpassword.text.toString()
             if (TextUtils.isEmpty(loginemail)) {
-                binding.loginemail.error = "Please check your email account"
+                binding.loginemail.error = "Please check your email account."
                 return@setOnClickListener
             } else if (TextUtils.isEmpty(loginpassword)) {
-                binding.loginpassword.error = "Please check your password "
+                binding.loginpassword.error = "Please check your password. "
                 return@setOnClickListener
 
             }
@@ -46,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
                     } else {
                         Toast.makeText(
                             applicationContext,
-                            "Incorrect login please try again",
+                            "Incorrect login please try again.",
                             Toast.LENGTH_LONG
                         ).show()
                     }

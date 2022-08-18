@@ -25,10 +25,10 @@ class PasswordResetActivity : AppCompatActivity() {
             else {
                 auth.sendPasswordResetEmail(presetemail).addOnCompleteListener(this){sifirlama->
                     if(sifirlama.isSuccessful){
-                        binding.passwordresetmessage.text="We have sent a link to your e-mail address. Please check"
+                        binding.passwordresetmessage.text="We have sent a link to your e-mail address. Please check."
                     }
                     else{
-                       binding.passwordresetmessage.text="Upps! Reset failed"
+                       binding.passwordresetmessage.text="Upps! Reset failed."
                     }
                 }
             }

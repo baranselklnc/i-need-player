@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/constraitbackground"
-    tools:context=".ProfilActivity"
+    tools:context=".view.ProfilActivity"
     tools:layout_editor_absoluteX="-1dp"
     tools:layout_editor_absoluteY="37dp">
 
+
     <Button
         android:id="@+id/profilelobby"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/buttonbackground"
         android:text="LOBBY"
         android:textAllCaps="true"
@@ -28,10 +28,10 @@
 
     <Button
         android:id="@+id/profileExitButton"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/buttonbackground"
         android:backgroundTint="@color/buttonColor"
@@ -60,10 +60,10 @@
 
     <Button
         android:id="@+id/profileUpdateButton"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/buttonbackground"
         android:backgroundTint="@color/buttonColor"
@@ -71,9 +71,8 @@
         android:textAllCaps="true"
         app:layout_constraintBottom_toTopOf="@+id/profileExitButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProfileMailText" />
+        app:layout_constraintTop_toBottomOf="@+id/profilePositionText" />
 
     <ImageView
         android:id="@+id/profileimageView"
@@ -82,6 +81,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/profileyoubrieflyText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -91,9 +91,9 @@
         android:id="@+id/profileFullNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
 
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
         android:layout_marginEnd="16dp"
         android:text="Name and Surname"
         android:textSize="20sp"
@@ -106,9 +106,9 @@
         android:id="@+id/ProfileMailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
 
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
         android:layout_marginEnd="16dp"
         android:text="Your e-mail account"
         android:textSize="20sp"
@@ -119,11 +119,12 @@
 
     <Button
         android:id="@+id/profileDeleteButton"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/buttonbackground"
         android:text="Delete my account "
         android:textAllCaps="true"
@@ -135,16 +136,17 @@
 
     <TextView
         android:id="@+id/profilePositionText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="16dp"
+        android:maxLines="3"
         android:text="About"
         android:textAlignment="center"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/profileUpdateButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProfileMailText" />
 

@@ -14,19 +14,25 @@
         android:theme="@style/Theme.Ineedplayer"
         tools:targetApi="31">
         <activity
-            android:name=".UpdateActivity"
+            android:name=".delewwww"
             android:exported="false" />
         <activity
-            android:name=".PasswordResetActivity"
+            android:name=".LobbyActivity"
             android:exported="false" />
         <activity
-            android:name=".UserActivity"
+            android:name=".view.UpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfilActivity"
+            android:name=".view.PasswordResetActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".view.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

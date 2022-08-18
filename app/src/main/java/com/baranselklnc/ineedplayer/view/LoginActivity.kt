@@ -1,4 +1,4 @@
-package com.baranselklnc.ineedplayer
+package com.baranselklnc.ineedplayer.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,17 +6,18 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import com.baranselklnc.ineedplayer.databinding.ActivityLoginBinding
-import com.baranselklnc.ineedplayer.databinding.ActivityUserBinding
+import com.baranselklnc.ineedplayer.model.User
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
+
     lateinit var auth: FirebaseAuth
     lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        auth = FirebaseAuth.getInstance() //konum izni , erişim
+        auth = FirebaseAuth.getInstance() //konum izni ,erişim
         //oturum açıp açmadığının kontrolü
         var currentUser = auth.currentUser
         if (currentUser != null) {

@@ -1,9 +1,8 @@
-package com.baranselklnc.ineedplayer
+package com.baranselklnc.ineedplayer.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.baranselklnc.ineedplayer.databinding.ActivityUserBinding
@@ -75,7 +74,7 @@ class UserActivity : AppCompatActivity() {
         }
         //go to login page
         binding.userloginbutton.setOnClickListener{
-            intent= Intent(applicationContext,LoginActivity::class.java)
+            intent= Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

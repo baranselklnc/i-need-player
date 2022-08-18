@@ -1,11 +1,9 @@
-package com.baranselklnc.ineedplayer
+package com.baranselklnc.ineedplayer.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Toast
-import com.baranselklnc.ineedplayer.databinding.ActivityPasswordResetBinding
 import com.baranselklnc.ineedplayer.databinding.ActivityUpdateBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -54,8 +52,8 @@ class UpdateActivity : AppCompatActivity() {
                 }
             }
             //paswordUpdate
-            var updatepassword=binding.updatepassword.text.toString().trim()
-            currentUser!!.updatePassword(updatepassword).addOnCompleteListener{
+          //  var updatepassword=binding.updatepassword.text.toString().trim()
+         /*   currentUser!!.updatePassword(updatepassword).addOnCompleteListener{
                     task->
                 if(task.isSuccessful ){
                     Toast.makeText(applicationContext,"Your password has been updated",Toast.LENGTH_SHORT).show()
@@ -65,7 +63,7 @@ class UpdateActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext,"Upss!Password update operation failed,try again",Toast.LENGTH_SHORT).show()
 
                 }
-            }
+            }*/
 
 
             //name-surname update
@@ -78,7 +76,7 @@ class UpdateActivity : AppCompatActivity() {
             currentUserDb?.child("about")?.setValue(binding.updateabout.text.toString())//sonradan eklendi
         }
         binding.updateloginbutton.setOnClickListener{
-            intent= Intent(applicationContext,LoginActivity::class.java)
+            intent= Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/constraitbackground"
-    tools:context=".UpdateActivity"
+    tools:context=".view.UpdateActivity"
     tools:layout_editor_absoluteX="-1dp"
     tools:layout_editor_absoluteY="37dp">
 
@@ -14,7 +14,7 @@
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="9dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/buttonbackground"
         android:backgroundTint="@color/buttonColor"
@@ -27,10 +27,10 @@
 
     <EditText
         android:id="@+id/updatenamesurname"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/edittextbackground"
         android:ems="10"
@@ -47,21 +47,20 @@
         android:id="@+id/updateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
         android:text="Update My Information "
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/updatenamesurname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateimageView" />
 
     <EditText
         android:id="@+id/updateemail"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
@@ -72,12 +71,12 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/updatepassword"
+        app:layout_constraintBottom_toTopOf="@+id/updateabout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updatenamesurname" />
 
-    <EditText
+    <!--  <EditText
         android:id="@+id/updatepassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -93,15 +92,16 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/updateabout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateemail" />
+        app:layout_constraintTop_toBottomOf="@+id/updateemail" />-->
 
     <Button
         android:id="@+id/updateactivebutton"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/buttonbackground"
         android:backgroundTint="@color/buttonColor"
@@ -117,8 +117,9 @@
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
         android:text="By becoming a member or logging in, you accept the Terms of use and Privacy."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,9 +131,9 @@
         android:id="@+id/updateimageView"
         android:layout_width="153dp"
         android:layout_height="121dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toTopOf="@+id/updateText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -141,23 +142,23 @@
 
     <EditText
         android:id="@+id/updateabout"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
+
+
         android:layout_marginStart="16dp"
-
-
-        android:layout_marginTop="12dp"
-        android:maxLines="3"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/edittextbackground"
         android:ems="10"
         android:hint="What position do you play? Briefly introduce yourself"
         android:inputType="textMultiLine"
+        android:maxLines="3"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/updateactivebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updatepassword" />
+        app:layout_constraintTop_toBottomOf="@+id/updateemail" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

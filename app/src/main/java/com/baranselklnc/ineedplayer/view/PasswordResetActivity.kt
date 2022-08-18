@@ -1,10 +1,9 @@
-package com.baranselklnc.ineedplayer
+package com.baranselklnc.ineedplayer.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.Toast
 import com.baranselklnc.ineedplayer.databinding.ActivityPasswordResetBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -25,7 +24,7 @@ class PasswordResetActivity : AppCompatActivity() {
             else {
                 auth.sendPasswordResetEmail(presetemail).addOnCompleteListener(this){sifirlama->
                     if(sifirlama.isSuccessful){
-                        binding.passwordresetmessage.text="We have sent a link to your e-mail address. Please check"
+                        binding.passwordresetmessage.text="We have sent a link to your e-mail address.Please check"
                     }
                     else{
                        binding.passwordresetmessage.text="Upps! Reset failed"
